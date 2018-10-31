@@ -3,17 +3,107 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ClientesREST</title>
+  <title>App Vet</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
 </head>
 
-<body>
-  <app-root></app-root>
+<body class="adminbody">
+  <div id="main">
+    <div class="headerbar">
+
+      <!-- LOGO -->
+      <div class="headerbar-left">
+        <a href="index.html" class="logo"><img alt="logo" src="assets/img/logo.png"> <span>Admin</span></a>
+      </div>
+
+      <nav class="navbar-custom">
+
+        <ul class="list-inline float-right mb-0">
+          <li class="list-inline-item dropdown notif">
+            <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+              aria-expanded="false">
+              <img src="assets/img/admin.png" alt="Profile image" class="avatar-rounded">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5 class="text-overflow"><small>Hello, admin</small> </h5>
+              </div>
+
+              <!-- item-->
+              <a href="pro-profile.html" class="dropdown-item notify-item">
+                <i class="fa fa-user"></i> <span>Profile</span>
+              </a>
+
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <i class="fa fa-power-off"></i> <span>Logout</span>
+              </a>
+
+              <!-- item-->
+              <a target="_blank" href="https://www.pikeadmin.com" class="dropdown-item notify-item">
+                <i class="fa fa-external-link"></i> <span>Pike Admin</span>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="list-inline menu-left mb-0">
+          <li class="float-left">
+            <button class="button-menu-mobile open-left">
+              <i class="fas fa-th-list"></i>
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+    <!-- en header -->
+    <!-- Left Sidebar -->
+    <div class="left main-sidebar">
+      <div class="sidebar-inner leftscroll">
+        <div id="sidebar-menu">
+          <ul>
+            <li class="submenu">
+              <a href="#"><i class="fa fa-fw fa-table"></i> <span> Tables </span> <i class="fas fa-arrow-down"></i></a>
+              <ul class="list-unstyled">
+                <li><a href="#">Basic Tables</a></li>
+                <li><a href="#">Data Tables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-page">
+    <div class="content">
+      <div class="container-fluid">
+        <app-root></app-root>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span class="text-right">
+      Copyright <a target="_blank" href="#">Your Website</a>
+    </span>
+    <span class="float-right">
+      Powered by <a target="_blank" href="https://www.pikeadmin.com"><b>Pike Admin</b></a>
+    </span>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -14,13 +14,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // No olvidar el Httpclient
 import { HttpClientModule } from '@angular/common/http';
+import { EditCustomerComponent } from './components/edit-customer/edit-customer.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListCustomerComponent
+    ListCustomerComponent,
+    EditCustomerComponent
   ],
   imports: [
     BrowserModule,
